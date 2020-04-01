@@ -1,0 +1,36 @@
+img.film-poster {
+  display: block;
+  max-width:300px;
+  max-height:400px;
+  width: 210px;
+  height: 280px;
+  border-radius: 10px;
+}
+
+.film-details-container {
+	background-color: #e8ebee;
+	border: 2px solid #303436;
+	border-radius: 10px;
+	width: 100%;
+	min-width: 50vw;
+}
+
+h4.film-title {
+	border-bottom: 3px solid #8d989e;
+	font-family: 'Helvetica';
+
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.badge-rated {
+	color: #8d989e;
+	border: 1px solid #8d989e;
+	background-color: #e8ebee;
+	font-family: Courier New;
+	font-weight: bold;
+	border-radius: 3px;
+	padding: 0px 10px;
+	margin-right: 5px;
+}

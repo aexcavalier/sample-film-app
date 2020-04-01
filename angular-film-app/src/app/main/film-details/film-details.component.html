@@ -1,0 +1,20 @@
+<div class="d-flex flex-row p-2 film-details-container">
+	<div class="p-2">
+		<img class="film-poster" alt="Film Poster" [src]="filmDetails.localImagePosterPath">
+	</div>
+	<div class="p-2 flex-column">
+		 <div class="p-2"><h4 class="film-title">{{ filmDetails.Title }}</h4></div>
+		 <div class="p-2">
+		 	<label class="badge-rated"> {{ filmDetails.Rated }}</label>
+		 	<label class=""> {{ filmDetails.Runtime }}</label>
+			<label class="float-right">{{ filmDetails.Released }}</label>
+		 </div>
+		 <div class="p-2">{{ filmDetails.Plot }}</div>
+		 <div class="p-2">
+		 	<!-- <button ></button> -->
+
+		 	<a class="btn btn-orange float-right" href="{{ 'https://www.imdb.com/title/' + filmDetails.imdbID }}" target="_blank">View on IMDB</a>
+		 </div>
+
+	</div>
+</div>

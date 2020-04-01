@@ -1,0 +1,29 @@
+@import './variables';
+@import './mixins';
+
+.module-body {
+	width: 100%;
+	background-color: #F5F5F5;
+}
+
+.module-container {
+	max-width: 60vw;
+	width: 60vw;
+	min-width: 800px;
+	background-color: #FFFFFF;
+}
+
+.btn {
+	font-weight: bold;
+}
+
+.btn-orange {
+  color: #FFFFFF;
+  background-color: #f9b44a;
+  border-color: #f9b44a;
+}
+
+.btn-orange:focus {
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(244, 161, 66, 0.25);
+}

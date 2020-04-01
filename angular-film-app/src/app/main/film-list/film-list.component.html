@@ -1,0 +1,36 @@
+<div class="p-4 module-container">
+
+	<h1>Film DB</h1>
+
+	<div class="p-2">
+	</div>
+
+	<div class="p-2">
+		
+		<!-- This Design Can be a Filter Dropdown too -->
+		<div class="p-2 btn-group float-right" role="group">			
+			<button type="button" class="btn" 
+				[ngClass]="{'btn-primary-box': decade === 2010, 'btn-secondary-box': decade !== 2010 }"
+				(click)="onDecadeSelect(2010)">
+				2010's
+			</button>
+			<button type="button" class="btn" 
+				[ngClass]="{'btn-primary-box': decade === 2000, 'btn-secondary-box': decade !== 2000 }"
+				(click)="onDecadeSelect(2000)">
+				2000's
+			</button>
+		  	<button type="button" class="btn" 
+				[ngClass]="{'btn-primary-box': decade === 1990, 'btn-secondary-box': decade !== 1990 }"
+				(click)="onDecadeSelect(1990)">
+				1990's
+			</button>	    
+		</div>
+	</div>
+
+
+	<div class="p-1">
+		<div class="p-2" *ngFor="let film of filmList"> 
+			<app-film-details [filmRecord]="film"></app-film-details>
+		</div>
+	</div>
+</div>
